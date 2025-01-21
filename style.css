@@ -1,3 +1,84 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the root font size (10px equivalent) */
+html {
+  font-size: 62.5%; /* Equal to 10px */
+}
+
+/* Styling for the root element */
 #root {
+  font-family: Arial, sans-serif;
+  text-align: center;
   color: red;
+}
+
+/* Styling for the main title */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+/* Container for episodes */
+.episode-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2.4rem;
+  justify-items: center;
+}
+
+/* Styling for individual movie/episode cards */
+.episode-card {
+  border: 1px solid #ddd;
+  width: 25rem;
+  background-color: #f4f4f4;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Title section: black border and text */
+.episode-card h2 {
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  color: black;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Image styling for episode */
+.episode-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Description text styling */
+.episode-card p {
+  color: gray;
+  font-size: 1.4rem;
+
+  margin-bottom: 1.8rem;
+  padding: 0 1.2rem 0;
+}
+
+/* Link styling for the title */
+.episode-card a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* Removing hover underline effect for the title */
+.episode-card a:hover {
+  text-decoration: none;
 }
