@@ -82,3 +82,38 @@ h1 {
 .episode-card a:hover {
   text-decoration: none;
 }
+
+/* Live Search Bar */
+.search-container {
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.search-input {
+  font-size: 1.6rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+.search-label {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #333;
+}
